@@ -1,6 +1,7 @@
 # Can machine predict financial time series?
 This repository is to apply machine learning algorithms in the field of financial time series. The notebook ***LSTM_ARIMA_OOP_version.ipynb*** compares the widely used RNN structure **LSTM** with the traditional **ARIMA** model.
 * Aim: predict the adjusted close price of the stock index SSEC
+* Raw data is provided in *SZ.csv*
 * Performance metric: RMSE(Root Mean Squared Error)
 * OCHLV(open,close,high,low,volume) serves as the feature vector of LSTM cf. ARIMA only takes adjusted close price as input
 * **LSTM decreased RMSE by 70.90%**
@@ -19,6 +20,3 @@ The decline of train loss and validation loss means the training process works.
 ## ARIMA
 ARIMA(P,I,Q) is determined by AIC. It forecasts 250 steps ahead at one time. RMSE reaches 473.85797.
 ![ARIMA_prediction](/ssec_2021_07_06-15_52_53_arima.png)
-
-## Further Notice
-* Raw data is provided in *SZ.csv*
